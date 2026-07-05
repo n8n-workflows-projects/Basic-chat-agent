@@ -1,0 +1,92 @@
+{
+  "name": "basic chat agent",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        -80,
+        -96
+      ],
+      "id": "deead084-f33a-4e9e-8c45-979043d788c6",
+      "name": "When chat message received",
+      "webhookId": "c9a818e1-3852-4e26-aa50-b34a411928c7"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        192,
+        -96
+      ],
+      "id": "8e566dfc-0952-486e-9dfd-6b5851016a89",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1.1,
+      "position": [
+        192,
+        112
+      ],
+      "id": "6ebd5d16-513f-4604-94ed-294dede594c1",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "15qdPT9UD58pYPiE",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false,
+    "timeSavedMode": "fixed",
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "versionId": "6ce06cc2-9f75-4227-af4d-b7a35a5774e0",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "305c94ba9eec1593f65ff3c440db4af4c7f73fac57726d95ca30180013ee2b57"
+  },
+  "nodeGroups": [],
+  "id": "uL1ZS5p3hnhfdgtu",
+  "tags": []
+}
