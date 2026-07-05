@@ -2,7 +2,7 @@
 
 A simple AI-powered chat agent built using **n8n** and **Google Gemini Chat Model**. This workflow demonstrates how an AI Agent receives user messages, processes them using a Large Language Model (LLM), and returns intelligent responses.
 
-
+---
 
 ## 📌 Overview
 
@@ -12,7 +12,7 @@ When a user sends a message, the AI Agent forwards the request to the Google Gem
 
 This workflow is ideal for learning how AI Agents work before adding memory, databases, APIs, or external tools.
 
-
+---
 
 ## 📖 Workflow Architecture
 
@@ -22,7 +22,7 @@ This workflow is ideal for learning how AI Agents work before adding memory, dat
 
 ### Flow
 
-
+```
 User Message
       │
       ▼
@@ -36,8 +36,9 @@ Google Gemini Chat Model
       │
       ▼
 AI Response
+```
 
-
+---
 
 ## ⚙️ Workflow Components
 
@@ -47,6 +48,7 @@ AI Response
 | **AI Agent** | Receives the user's prompt, communicates with the AI model, and generates a response. |
 | **Google Gemini Chat Model** | Acts as the Large Language Model (LLM) that understands and answers the user's query. |
 
+---
 
 ## 🧠 How It Works
 
@@ -56,16 +58,17 @@ The user enters a message in the chat interface.
 
 Example:
 
-
+```
 Tell me about AI agents.
+```
 
-
+---
 
 ### Step 2
 
 The **When Chat Message Received** trigger activates automatically.
 
-
+---
 
 ### Step 3
 
@@ -77,7 +80,7 @@ The AI Agent:
 - Creates the prompt
 - Sends it to Gemini
 
-
+---
 
 ### Step 4
 
@@ -89,18 +92,19 @@ It performs:
 - Reasoning
 - Response generation
 
+---
 
 ### Step 5
 
 The generated response is returned to the AI Agent.
 
-
+---
 
 ### Step 6
 
 The AI Agent sends the final answer back to the user.
 
-
+---
 
 ## 🖼 Workflow Screenshot
 
@@ -108,7 +112,7 @@ The AI Agent sends the final answer back to the user.
   <img src="./images/workflow.png" width="1000">
 </p>
 
-
+---
 
 ## 🚀 Features
 
@@ -120,11 +124,11 @@ The AI Agent sends the final answer back to the user.
 - Fast responses
 - Foundation for AI assistants
 
-
+---
 
 ## 📂 Current Workflow
 
-
+```
 Chat Trigger
       │
       ▼
@@ -132,8 +136,9 @@ AI Agent
       │
       ▼
 Google Gemini Chat Model
+```
 
-
+---
 
 ## 🔮 Future Enhancements
 
@@ -152,7 +157,7 @@ This basic workflow can be extended by adding:
 
 Future Architecture:
 
-
+```
                   User
                     │
                     ▼
@@ -168,9 +173,9 @@ Future Architecture:
       ├─────────┼──────────┤
       ▼         ▼          ▼
  Search     APIs       Custom Tools
+```
 
-
-
+---
 
 ## 📚 Learning Objectives
 
@@ -183,7 +188,7 @@ After completing this workflow, you will understand:
 - Basic AI workflow architecture
 - The relationship between AI Agents and Chat Models
 
-
+---
 
 ## 🛠 Requirements
 
@@ -191,7 +196,7 @@ After completing this workflow, you will understand:
 - Google Gemini API Key
 - Google AI Credentials
 
-
+---
 
 ## 💡 Use Cases
 
@@ -202,9 +207,11 @@ After completing this workflow, you will understand:
 - Prototype AI Agent
 - AI Workflow Testing
 
+---
 
 ## 📁 Project Structure
 
+```
 Basic-Chat-Agent/
 │
 ├── README.md
@@ -212,13 +219,15 @@ Basic-Chat-Agent/
 └── images/
     ├── workflow.png
     └── basic-chat-agent-architecture.png
+```
 
+---
 
 ## 📜 License
 
 This project is provided for learning and educational purposes.
 
-
+---
 
 ## ⭐ Support
 
