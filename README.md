@@ -109,7 +109,7 @@ The AI Agent sends the final answer back to the user.
 ## 🖼 Workflow Screenshot
 
 <p align="center">
-  <img src="./images/workflow.png" width="1000">
+  <img src="https://github.com/n8n-workflows-projects/Basic-chat-agent/blob/a459689f2990bd2a18263e6e8f429e85e0b293a3/Screenshot%202026-07-05%20143823.png" width="1000">
 </p>
 
 ---
