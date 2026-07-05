@@ -14,10 +14,10 @@ This workflow is ideal for learning how AI Agents work before adding memory, dat
 
 ---
 
-## 📖 Workflow Architecture
+## 📖 Workflow Design
 
 <p align="center">
-  <img src="./images/basic-chat-agent-architecture.png" width="800">
+  <img src="[./images/basic-chat-agent-architecture.png](https://github.com/n8n-workflows-projects/Basic-chat-agent/blob/7390f64f95ee5bba16e1221f226d1d029a5ebebd/Screenshot%202026-07-05%20144635.png)" width="800">
 </p>
 
 ### Flow
